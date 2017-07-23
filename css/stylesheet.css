@@ -1,0 +1,44 @@
+html {
+	height: 100%;
+}
+
+body {
+	background: linear-gradient(135deg, #7ed6d4, #718ac6);
+
+}
+
+a {
+	text-decoration: none;
+	margin: 2vw;
+}
+
+a:hover { text-decoration: none;}
+a:link { color:#ffffff; text-decoration:none }
+a:visited { color:#ffffff; text-decoration:none }
+a:hover { color:#5e5e5e; text-decoration:none }
+a:active { color:#ffffff; text-decoration:none }
+
+hr{
+	color: #ffffff;
+}
+
+.ud-center {
+	transform: translate(calc(50vw - 50%),calc(50vh - 50%));
+}
+
+.w-margin {
+	margin-right: 25%;
+	margin-left: 25%;
+}
+
+.icon-and-name {
+	text-align: center;
+	color: #ffffff;
+	font-size: calc(100% + ((1vw - .48rem) * 1.389));
+}
+
+.link-icon {
+	margin-top: 2vw;
+	text-align: center;
+	font-size: calc(100% + ((1vw - .48rem) * 1.389));
+}
