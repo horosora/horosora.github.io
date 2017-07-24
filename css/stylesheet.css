@@ -19,7 +19,9 @@ a:hover { color:#5e5e5e; text-decoration:none }
 a:active { color:#ffffff; text-decoration:none }
 
 hr{
-	color: #ffffff;
+    border: 0;
+    height: 1px;
+    background: #ffffff;
 }
 
 .ud-center {
