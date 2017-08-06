@@ -4,12 +4,15 @@ html {
 
 body {
 	background: linear-gradient(135deg, #7ed6d4, #718ac6);
+}
 
+p{
+	margin: 0px;
 }
 
 a {
 	text-decoration: none;
-	margin: 2vw;
+	margin: 3vw;
 }
 
 a:hover { text-decoration: none;}
@@ -18,29 +21,104 @@ a:visited { color:#ffffff; text-decoration:none }
 a:hover { color:#5e5e5e; text-decoration:none }
 a:active { color:#ffffff; text-decoration:none }
 
-hr{
-    border: 0;
-    height: 1px;
-    background: #ffffff;
-}
-
-.ud-center {
+.panel {
+	padding-right: 30vw;
+	padding-left: 30vw;
 	transform: translate(calc(50vw - 50%),calc(50vh - 50%));
 }
 
-.w-margin {
-	margin-right: 25%;
-	margin-left: 25%;
+@media screen and (max-width: 500px){
+	.panel {
+		padding-right: 10vw;
+		padding-left: 10vw;
+		transform: translate(calc(50vw - 50%),calc(50vh - 50%));
+	}
 }
 
 .icon-and-name {
+	margin: 10px; 
 	text-align: center;
 	color: #ffffff;
 	font-size: calc(100% + ((1vw - .48rem) * 1.389));
 }
 
 .link-icon {
-	margin-top: 2vw;
+	margin: 10px; 
 	text-align: center;
 	font-size: calc(100% + ((1vw - .48rem) * 1.389));
+}
+
+.line{
+	height: 1px;
+	width: 0px;
+	background-color: #ffffff;
+	animation: line 2s ease forwards 0.5s;
+}
+
+@keyframes line{
+	0%{
+		height: 1px;
+		margin-right: 50%;
+		margin-left: 50%;
+		background: #ffffff;
+	}
+	100%{
+		height: 1px;
+		width: 100%;
+		margin-right: 0%;
+		margin-left: 0%;
+		background: #ffffff;
+	}
+}
+
+.box{
+	height: 0px;
+	width: 100%;
+	color: #ffffff;
+	font-size: 0px;
+	opacity: 0.0;
+	margin: 0em;
+	animation: box 1.5s ease forwards 2.5s;
+}
+
+@keyframes box{
+	0%{
+		height: 0px;
+		width: 100%;
+		font-size: 0px;
+		opacity: 0.0;
+		margin: 0em;
+
+	}
+	80%{
+		height: 100%;
+		widows: 100%;
+		font-size: calc(100% + ((1vw - .48rem) * 1.389));
+		opacity: 0.0;
+		margin-top: 1.5em;
+		margin-bottom: 1.5em;
+		margin-left: 1em;
+	}
+	100%{
+		height: 100%;
+		widows: 100%;
+		font-size: calc(100% + ((1vw - .48rem) * 1.389));
+		opacity: 1.0;
+		margin-top: 1.5em;
+		margin-bottom: 1.5em;
+		margin-left: 1em;
+	}
+}
+
+.sp{
+	animation: sp 1.5s ease forwards 2.5s;
+}
+
+@keyframes sp{
+	0%{
+		margin: 0em;
+	}
+	100%{
+		margin: 1em;
+	}
 }
