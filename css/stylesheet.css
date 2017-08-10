@@ -110,8 +110,6 @@ a:active { color:#ffffff; text-decoration:none }
 	margin-top: 1em;
 }
 
-
-
 @media screen and (max-width: 500px) {
 	.panel {
 		width: 80%;
