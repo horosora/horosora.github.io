@@ -3,7 +3,9 @@ html {
 	width: 100%;
 }
 
-body { background: linear-gradient(135deg, #7ed6d4, #718ac6);}
+body { 
+	background: linear-gradient(135deg, #7ed6d4, #718ac6);
+}
 
 p {
 	margin: 0px;
